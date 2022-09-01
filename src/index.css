@@ -1,0 +1,139 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+  --col1:#00aeff;
+  --col2:blue;
+  --col3:rgba(81, 38, 235, 0.726);
+  --col4:purple;
+  --img-box-shadow-one: -5px -5px 0px 5px var(--col4), 5px 5px 0px 5px var(--col1) ;
+  --img-box-shadow-two: -5px -5px 0px 5px var(--col1), 5px 5px 0px 5px var(--col4) ;
+}
+
+.page{
+  height: 90vh;
+}
+
+.imgBorder{
+  box-shadow: var(--img-box-shadow-one);
+}
+
+.imgBorder:hover{
+  transition:0.5s;
+  box-shadow: var(--img-box-shadow-two);
+}
+
+.border-gradient {
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+div {
+  --angle: 0deg;
+  /* … */
+  border-image: linear-gradient(var(--angle), green, yellow) 1;
+  animation: 10s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+
+
+
+.animate-character
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    var(--col1) 0%,
+    var(--col2) 29%,
+    var(--col3) 67%,
+    var(--col4) 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+ 
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.footer{
+    height: fit-content;
+}
+
+.loading-box-container {
+  --radius: 10px;
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  padding: var(--radius);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.loading-box-container:hover{
+  transition: 0.5s;
+  transform: scale(1.06);
+}
+
+.loading-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #000;
+  border-radius: var(--radius);
+}
+
+.loading-box-container::before {
+  content: '';
+  width: 150%; /* The upscaling allows the box to fill its container even when rotated */
+  height: 150%;
+  position: absolute;
+  top: -25%; left: -25%;
+  background: conic-gradient(var(--col1), var(--col4));
+  animation: rotate-border 5s linear infinite;
+}
+
+@keyframes rotate-border {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.img-hover-zoom {
+  overflow: hidden; 
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+
+.bb:hover{
+  border-bottom: 5px solid #00aeff;
+}
