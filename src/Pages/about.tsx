@@ -25,7 +25,7 @@ const About=()=>{
                     </Fade>
                 </div>
             </div>
-            <div className="row page  mt-5">
+            <div className="row   mt-5">
                 <div className="col-sm">
                     <Fade direction="down" cascade={true}>
                         <h1 className="display-1 animate-character">choose us?</h1>

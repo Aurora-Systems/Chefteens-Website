@@ -30,6 +30,10 @@ body{
   border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 }
 
+img{
+  margin-top: 10px;
+}
+
 div {
   --angle: 0deg;
   /* … */

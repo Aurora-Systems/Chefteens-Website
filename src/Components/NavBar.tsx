@@ -18,7 +18,6 @@ const TopNavbar=()=>{
                         <Nav.Link href="/" className="animate-character bb">Home</Nav.Link>
                         <Nav.Link href="about" className="animate-character bb">About</Nav.Link>
                         <Nav.Link href="gallery" className="animate-character bb">Gallery</Nav.Link>
-                        <Nav.Link href="contact" className="animate-character bb">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
