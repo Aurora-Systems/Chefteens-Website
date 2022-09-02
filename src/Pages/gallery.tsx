@@ -6,7 +6,7 @@ const Gallery=()=>{
             <div className="row text-center mt-2 d-flex align-items-center">
                 <div className="col-sm">
                     <Fade direction="left">
-                        <video src={cvideo} autoPlay loop controls width="100"  className="rounded"/>
+                        <video src={cvideo} muted autoPlay loop controls width="100"  className="rounded"/>
                     </Fade>
                 </div>
                 <div className="col-sm">
@@ -16,7 +16,7 @@ const Gallery=()=>{
                 </div>
                 <div className="col-sm">
                     <Fade direction="right">
-                        <video src={cvideo} autoPlay loop controls width="100"  className="rounded"/>
+                        <video src={cvideo} muted autoPlay loop controls width="100"  className="rounded"/>
                     </Fade>
                 </div>
                 
