@@ -7,7 +7,7 @@ const TopNavbar=()=>{
             <Navbar collapseOnSelect expand="sm"  bg="light">
                 <Container fluid>
                     <Navbar.Brand>
-                        <img src={logo}  width="70" alt=""/>
+                       <b className="animate-character">CHEFTEENS</b>
                     </Navbar.Brand>
                     <Navbar.Toggle>
                         <img src={list} alt=""/>

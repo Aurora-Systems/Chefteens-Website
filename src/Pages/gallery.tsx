@@ -1,7 +1,7 @@
 const Gallery=()=>{
     return(
-        <div>
-
+        <div className="container">
+            <div className="powr-social-feed" id="3a57d853_1662121542"></div>
         </div>
     )
 }

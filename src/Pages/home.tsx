@@ -14,8 +14,8 @@ const Home=()=>{
              <div className="row page mt-5 d-flex justify-content-center align-items-center" >
                 <div className="col-sm text-center">
                     <Fade direction="down" cascade={true}>
-                    <img src={logo} className="img-fluid " alt=""/>
                     <h1 className="display-1 animate-character">ChefTeens Catering</h1>
+                    <img src={logo}  className="img-fluid " alt=""/>
                     </Fade>
                 </div>
            
@@ -58,17 +58,21 @@ const Home=()=>{
                 <div className="col-sm text-center">
                 <Fade direction="left" cascade={true}>
                     <h1 className="display-1 animate-character">WE CATER FOR</h1>
-                    <small>Everyones Included</small>
+                    <small><b>Everyones Included</b></small>
                 </Fade>
                 </div>
                 <div className="col-sm text-center ">
                     <Fade direction="right" cascade={true}>
-                        <div className="animate-character">
-                            <p>Halaal</p>
-                            <p>Vegeterians</p>
-                            <p>Pescatarians</p>
-                            <p>Flexitarian</p>
-                            <p>Macrobiotic</p>
+                        <div className="animate-character ">
+                            <p><b>Halaal</b></p>
+                            <p><b>Vegeterians</b></p>
+                            <p><b>Pescatarians</b></p>
+                            <p><b>Flexitarian</b></p>
+                            <p><b>Macrobiotic</b></p>
+                            
+                            
+                           
+                            
                         </div>
                         
                     </Fade>

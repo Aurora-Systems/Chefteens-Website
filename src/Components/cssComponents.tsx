@@ -7,3 +7,6 @@ export const bgDiv=(media:any)=>{
         
     }
 }
+
+
+export const generalImg:string = "img-fluid rounded w-80";
